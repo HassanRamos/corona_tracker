@@ -5,6 +5,9 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import image from './images/image.png';
+import FooterPagePro from './components/footer'
+import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+
 
 
 class App extends React.Component {
@@ -29,18 +32,28 @@ class App extends React.Component {
         const { data, country } = this.state;
 
         return (
-
+          <div>
           <div className = { styles.container } >
           <h5 style={{color:'#152F8D'}}> Subscribe to our email newsletter today to receive  latest news on Covid-19 </h5>
           <MailchimpSubscribe url = { process.env.REACT_APP_MAILCHIMP_URL }/>
           <img className = { styles.image }src = { image } alt = "COVID-19"/>
-            <Cards data = { data }/>
-             <CountryPicker handleCountryChange = { this.handleCountryChange }/>
-             <Chart data = { data } country = { country }/>
-             </div>
+          <Cards data = { data }/>
+          <CountryPicker handleCountryChange = { this.handleCountryChange }/>
+          <Chart data = { data } country = { country }/>
+          </div>
+           <hr className="my-4" />
+          <div style={{alinContent:'center', backgroundColor:'#365CE7'}}>
+
+<MDBFooter class="page-footer font-small blue">
 
 
+  <div class="footer-copyright text-center py-3" style={{fontSize:'30px'}}> © 2020 Copyright:Wiciko Inc
+  </div>
 
+
+</MDBFooter>
+          </div>
+          </div>
         );
     }
 }
