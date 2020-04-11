@@ -57,9 +57,45 @@ class App extends React.Component {
           <h5 style={{color:'#152F8D'}}> Subscribe to our email newsletter today to receive  latest news on Covid-19 </h5>
           <MailchimpSubscribe url = { process.env.REACT_APP_MAILCHIMP_URL }/>
           <img className = { styles.image }src = { image } alt = "COVID-19"/>
+          <hr className="my-4" />
+          <div
+          style={{
+        width: '800px',
+        alinContent:'center',
+        height: '30px',
+        whiteSpace: 'nowrap',
+        color:'red',
+        backgroundColor:'#C7BFBF',
+        fontWeight: 'bold',
+        fontSize:'18px',
+
+      }}
+      >
+      <Marquee>
+        STAY SAFE   ||  SANITIZE   || STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||
+      </Marquee>
+    </div>
           <Cards data = { data }/>
           <CountryPicker handleCountryChange = { this.handleCountryChange }/>
           <Chart data = { data } country = { country }/>
+          <hr className="my-4" />
+          <div
+          style={{
+        width: '800px',
+        alinContent:'center',
+        height: '30px',
+        whiteSpace: 'nowrap',
+        color:'red',
+        backgroundColor:'#C7BFBF',
+        fontWeight: 'bold',
+        fontSize:'18px',
+
+      }}
+      >
+      <Marquee>
+        STAY SAFE   ||  SANITIZE   || STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||
+      </Marquee>
+    </div>
           </div>
            <hr className="my-4" />
           <div style={{alinContent:'center', backgroundColor:'#365CE7'}}>
