@@ -51,10 +51,10 @@ class App extends React.Component {
       }}
       >
       <Marquee>
-        STAY SAFE   ||  SANITIZE   || STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||
+        STAY HOME ||STAY SAFE   ||  SANITIZE   || STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||
       </Marquee>
     </div>
-          <h5 style={{color:'#152F8D'}}> Subscribe to our email newsletter today to receive  latest news on Covid-19 </h5>
+          <h5 style={{color:'#152F8D',fontWeight:'bold',fontSize:'20px'}}> Subscribe to our email newsletter to receive  latest news on Covid-19 </h5>
           <MailchimpSubscribe url = { process.env.REACT_APP_MAILCHIMP_URL }/>
           <img className = { styles.image }src = { image } alt = "COVID-19"/>
           <hr className="my-4" />
@@ -72,7 +72,7 @@ class App extends React.Component {
       }}
       >
       <Marquee>
-        STAY SAFE   ||  SANITIZE   || STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||
+        STAY HOME ||STAY SAFE   ||  SANITIZE   || STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||
       </Marquee>
     </div>
           <Cards data = { data }/>
@@ -93,7 +93,7 @@ class App extends React.Component {
       }}
       >
       <Marquee>
-        STAY SAFE   ||  SANITIZE   || STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||  STAY SAFE   ||  SANITIZE  ||
+        STAY HOME ||STAY SAFE   ||  SANITIZE   || STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||STAY HOME ||STAY SAFE   ||  SANITIZE   ||
       </Marquee>
     </div>
           </div>
